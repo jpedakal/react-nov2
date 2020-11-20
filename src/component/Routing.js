@@ -11,7 +11,7 @@ const Routing = () => {
                 <nav class="navbar navbar-inverse">
                     <div class="container-fluid">
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="#">WebSiteName</a>
+                            <a class="navbar-brand" href="#">My Application</a>
                         </div>
                         <ul class="nav navbar-nav">
                             <li><Link to="/">Home</Link></li>
