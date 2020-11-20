@@ -8,6 +8,11 @@ import Profile from './component/Profile';
 ReactDOM.render(
   <BrowserRouter>
     <div>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/post">Post</Link></li>
+        <li><Link to="/profile">Profile</Link></li>
+      </ul>
       <Route path="/" component={Home} exact></Route>
       <Route path="/post" component={Post}></Route>
       <Route path="/profile" component={Profile}></Route>
