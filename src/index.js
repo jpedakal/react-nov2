@@ -1,21 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-import Home from './component/Home';
-import Post from './component/Post';
-import Profile from './component/Profile';
+import { Route } from 'react-router-dom';
+import Routing from './component/Routing';
 
-ReactDOM.render(
-  <BrowserRouter>
-    <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/post">Post</Link></li>
-        <li><Link to="/profile">Profile</Link></li>
-      </ul>
-      <Route path="/" component={Home} exact></Route>
-      <Route path="/post" component={Post}></Route>
-      <Route path="/profile" component={Profile}></Route>
-    </div>
-  </BrowserRouter>
-  , document.getElementById('root'));
+ReactDOM.render(<Routing />, document.getElementById('root'));
