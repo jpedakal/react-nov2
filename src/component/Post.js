@@ -1,11 +1,18 @@
 import React from 'react';
 
 const Post = () => {
-  return (
-      <div>
-          <h1>Welcome To Post Page</h1>
-      </div>
-  )
+    return (
+        <div className="panel panel-success">
+            <div className="panel-heading">
+                Post
+          </div>
+            <div className="panel-body">
+                <div className="jumbotron">
+                   <h2>Post Page</h2>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Post;
