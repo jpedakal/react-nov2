@@ -1,6 +1,7 @@
 import React from 'react';
 
-const PostDetails = () => {
+const PostDetails = (props) => {
+    console.log(props);
     return (
         <div className="panel panel-success">
             <div className="panel-heading">Profile</div>
