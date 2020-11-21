@@ -10,6 +10,13 @@
 import React, {Component} from 'react';
 
 class LifeCycle extends Component{
+    constructor(){
+        super()
+
+        this.state={
+            
+        }
+    }
     render(){
 
     }
