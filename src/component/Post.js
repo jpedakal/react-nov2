@@ -12,13 +12,13 @@ const Post = () => {
                     <h2>Post Page</h2>
                 </div>
                 <h3>Javascript</h3>
-                <Link>Details</Link>
+                <Link to="/post/javascript">Details</Link>
                 <h3>Nodejs</h3>
-                <Link>Details</Link>
+                <Link to="/post/node">Details</Link>
                 <h3>ReactJs</h3>
-                <Link>Details</Link>
+                <Link to="/post/react">Details</Link>
                 <h3>AngularJs</h3>
-                <Link>Details</Link>
+                <Link to="/post/angular">Details</Link>
             </div>
         </div>
     )

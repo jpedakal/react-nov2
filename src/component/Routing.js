@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import Post from './Post';
 import Profile from './Profile';
+import PostDetails from './PostDetails';
 
 const Routing = () => {
     return (
@@ -21,7 +22,8 @@ const Routing = () => {
                     </div>
                 </nav>
                 <Route path="/" component={Home} exact></Route>
-                <Route path="/post" component={Post}></Route>
+                <Route path="/post" component={Post} exact></Route>
+                <Route path="/post/:topic" component={PostDetails}></Route>
                 <Route path="/profile" component={Profile}></Route>
             </div>
         </BrowserRouter>
