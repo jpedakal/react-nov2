@@ -10,6 +10,12 @@ const Post = () => {
                 <div className="jumbotron">
                    <h2>Post Page</h2>
                 </div>
+                <ul>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Nodejs</li>
+                    <li>Angular</li>
+                </ul>
             </div>
         </div>
     )
