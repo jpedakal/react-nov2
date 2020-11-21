@@ -6,3 +6,13 @@
 4) Render
 5) After Get Created
 */
+
+import React, {Component} from 'react';
+
+class LifeCycle extends Component{
+    render(){
+
+    }
+}
+
+export default LifeCycle;
