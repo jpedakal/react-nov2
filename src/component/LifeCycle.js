@@ -35,6 +35,10 @@ class LifeCycle extends Component{
            </div>
        )
     }
+
+    componentDidMount(){
+        console.log("Inside component will mount");
+    }
 }
 
 export default LifeCycle;
