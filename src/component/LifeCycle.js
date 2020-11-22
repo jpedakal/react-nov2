@@ -10,15 +10,12 @@
 import React, { Component } from 'react';
 
 class LifeCycle extends Component {
-    //  5) After Get created
-    componentDidMount() {
-        console.log("Inside component Did mount");
-    }
+
     // 1) Get Default State
     constructor(props) {
         super(props)
 
-        // 2) Set Deafult State
+    // 2) Set Deafult State
         this.state = {
             title: "React App"
         }
@@ -40,6 +37,10 @@ class LifeCycle extends Component {
         )
     }
 
+    //  5) After Get created
+    componentDidMount() {
+        console.log("Inside component Did mount");
+    }
 
 }
 
