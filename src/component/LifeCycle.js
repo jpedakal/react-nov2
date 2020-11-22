@@ -36,6 +36,7 @@ class LifeCycle extends Component{
        )
     }
 
+  //  5) After Get created
     componentDidMount(){
         console.log("Inside component will mount");
     }
