@@ -7,39 +7,40 @@
 5) After Get Created
 */
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-class LifeCycle extends Component{
-   // 1) Get Default State
-    constructor(props){
+class LifeCycle extends Component {
+    //  5) After Get created
+    componentDidMount() {
+        console.log("Inside component Did mount");
+    }
+    // 1) Get Default State
+    constructor(props) {
         super(props)
 
-  // 2) Set Deafult State
-        this.state={
+        // 2) Set Deafult State
+        this.state = {
             title: "React App"
         }
         console.log("Inside constructor");
     }
 
- //  3) Before get created
-      UNSAFE_componentWillMount(){
-          console.log("Inside component will mount");
-      }
-
-  // 4) render
-    render(){
-        console.log("Inside render");
-       return(
-           <div>
-             <h1>{this.state.title}</h1>
-           </div>
-       )
-    }
-
-  //  5) After Get created
-    componentDidMount(){
+    //  3) Before get created
+    UNSAFE_componentWillMount() {
         console.log("Inside component will mount");
     }
+
+    // 4) render
+    render() {
+        console.log("Inside render");
+        return (
+            <div>
+                <h1>{this.state.title}</h1>
+            </div>
+        )
+    }
+
+
 }
 
 export default LifeCycle;
