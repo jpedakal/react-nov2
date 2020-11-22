@@ -27,7 +27,7 @@ class LifeCycle extends Component {
         console.log("Inside component will mount");
     }
 
-    componentWillUpdate() {
+    UNSAFE_componentWillUpdate() {
         console.log("Inside component will update");
     }
 
@@ -41,7 +41,7 @@ class LifeCycle extends Component {
         return (
             <div>
                 <h1>{this.state.title}</h1>
-                <div className="btn btn-success" onClick={() => { this.setState({ title: "This is My Application" }) }}></div>
+                <div className="btn btn-success" onClick={() => { this.setState({ title: "This is My Application" }) }}>Click Here</div>
             </div>
         )
     }
