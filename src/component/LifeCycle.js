@@ -59,6 +59,11 @@ class LifeCycle extends Component {
     componentDidMount() {
         console.log("Inside component Did mount");
     }
+
+    // When you loose the component
+    componentWillUnmount(){
+        alert("you are leaving the page");
+    }
 }
 
 export default LifeCycle;
