@@ -33,6 +33,7 @@ class LifeCycle extends Component {
         return (
             <div>
                 <h1>{this.state.title}</h1>
+                <div className="btn btn-success" onClick={()=>{this.setState({title: "This is My Application"})}}></div>
             </div>
         )
     }
@@ -41,7 +42,6 @@ class LifeCycle extends Component {
     componentDidMount() {
         console.log("Inside component Did mount");
     }
-
 }
 
 export default LifeCycle;
