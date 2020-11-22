@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PostDetails = (props) => {
-    console.log(props.match.params.topic);
     return (
         <div className="panel panel-success">
             <div className="panel-heading">Profile</div>
