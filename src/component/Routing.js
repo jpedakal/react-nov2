@@ -4,7 +4,7 @@ import Home from './Home';
 import Post from './Post';
 import Profile from './Profile';
 import PostDetails from './PostDetails';
-import LifeCycle from './LifeCycle';
+import lifeCycle from './LifeCycle';
 
 const Routing = () => {
     return (
@@ -27,7 +27,7 @@ const Routing = () => {
                 <Route path="/post" component={Post} exact></Route>
                 <Route path="/post/:topic" component={PostDetails}></Route>
                 <Route path="/profile" component={Profile}></Route>
-                <Route path="/lifecycle" component={LifeCycle}></Route>
+                <Route path="/lifecycle" component={lifeCycle}></Route>
             </div>
         </BrowserRouter>
     )

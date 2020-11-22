@@ -22,7 +22,7 @@ class LifeCycle extends Component{
     }
 
  //  3) Before get created
-      componentWillMount(){
+      UNSAFE_componentWillMount(){
           console.log("Inside component will mount");
       }
 
