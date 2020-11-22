@@ -35,6 +35,15 @@ class LifeCycle extends Component {
         console.log("Inside component Did update");
     }
 
+    shouldComponentUpdate(nextProps, nextState){
+        console.log("Inside shouldComponentUpdate");
+        if(nextState.title===this.state.title){
+            return false
+        } else{
+            return true
+        }
+    }
+
     // 4) render
     render() {
         console.log("Inside render");
